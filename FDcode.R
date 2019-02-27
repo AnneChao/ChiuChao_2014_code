@@ -114,9 +114,8 @@ cppFunction(
 # (3). Example 
 #
 #===============================================
-data <- read.table("match_data.txt")
-data <- data[rowSums(data)>0,]
-dij <- read.table("ricotta_inci_dij.txt")
+data <- read.table("Dunes_data.txt")
+dij <- read.table("Dunes_distance.txt")
 dij <- as.matrix(dij)
 FD_MLE(q = c(0,1,2), data = data[,1], Dij = dij)
 FD_MLE(q = c(0,1,2), data = data[,2], Dij = dij)
